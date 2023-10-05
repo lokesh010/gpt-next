@@ -1,1 +1,9 @@
-{ "functions": { "pages/api/*/.ts": { "maxDuration": 300 } } }
+{
+  "buildCommand": "next build",
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "functions": { "pages/api/*/.ts": { "maxDuration": 300 } }
+}
