@@ -3,8 +3,8 @@ import { Configuration, OpenAIApi } from "openai";
 export default async function handler(req, res) {
   const { chats } = req.body;
   const configuration = new Configuration({
-    organization: "org-Jskx99nMa9ocGZULu5yb6U9f",
-    apiKey: "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",
+    organization: process.env.ORGANIZATION,
+    apiKey: process.env.API_KEY,
   });
   const openai = new OpenAIApi(configuration);
 
