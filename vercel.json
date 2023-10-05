@@ -2,11 +2,10 @@
   "buildCommand": "next build",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": "build",
   "git": {
     "deploymentEnabled": {
       "main": true
     }
   },
-  "functions": { "api/generate.js": { "maxDuration": 300 } }
+  "functions": { "pages/api/generate.js": { "maxDuration": 10 } }
 }
